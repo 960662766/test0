@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color:transparent;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+input{
+	outline: none;
+	background: none;
+	border: none;
+}
+li{
+	list-style:none;
+}
+img{
+	width: 100%;
+	// height: 100%;
+}
+:after,:before{
+	box-sizing: border-box;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    // background: #213983;
+}
+a{
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+textarea{
+	outline: none;
+	border: none;
+	resize:none;
+}
+.ivu-carousel-item{
+	overflow: hidden;
+}

@@ -1,0 +1,17 @@
+<div class="tableListMod1">
+    <TitleMod1 :typeStr="'党媒平台'"></TitleMod1>
+    <div class="infoBox">
+        <div class="infoScrollBox" ref="infoScrollBox">
+            <div class="infoListBox" v-for="(item,index) in showInfoData">
+                <div class="topInfo clearfix">
+                    <span class="infoStr fl">{{item.title}}</span>
+                </div>
+                <div class="botInfo clearfix">
+                    <span class="fl otherName">{{item.place}}</span>
+                    <span class="fl otherInfo">{{item.time}}</span>
+                    <span class="fr shareNum">{{item.num}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

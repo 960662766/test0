@@ -1,0 +1,20 @@
+.stringListMod{
+    position:relative;
+    margin:20px auto 0px;
+    width:5.05rem;
+    height:3.16rem;
+    .strInfo{
+        position:absolute;
+        padding:3px 6px;
+        color:#fff;
+        top:0px;
+        font-weight:bold;
+        left:0px;
+        &:hover{
+            border:#eee 1px solid;background:#000;
+        }
+    }
+    .blue{color:blue}
+    .red{color:red}
+    .yellow{color:yellow}
+}

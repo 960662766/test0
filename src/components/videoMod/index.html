@@ -1,0 +1,6 @@
+<div class="videoBox clearfix">
+<video v-for="(item,index) in showInfoData" class="fl" 
+    :src="item.videoUrl" 
+    :poster="item.imageUrl" 
+    :style="index == 0 ? 'margin-right: 0.3rem':''" ></video>
+</div>

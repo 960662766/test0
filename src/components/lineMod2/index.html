@@ -1,0 +1,17 @@
+<div class="lineBox2">
+    <TitleMod1 typeStr="世园新闻"></TitleMod1>
+    <div class="echartBox" id="lineType5"></div>
+    <div class="infoBox">
+        <span class="btnTop"></span>
+        <ul class="listBox">
+            <li class="list clearfix" v-for="(item,index) in showEventData"> 
+                <span class="fl index">{{index}}</span>
+                <span class="fl info">{{item.title}}</span>
+                <span class="fr num">{{item.similarCount}}</span>
+            </li> 
+        </ul>
+        <span class="btnBot"></span>
+    </div>
+    
+</div>
+

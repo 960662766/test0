@@ -1,0 +1,31 @@
+<div class="speedListMod clearfix">
+    <div class="clearfix">
+            <div class="fl modBox">
+                    <TitleMod1 :typeStr="'生产综合力排行'"></TitleMod1>
+                    <ul class="listBox">
+                        <li class="clearfix list" :style="getStyle1(index)" v-for="(item,index) in showLeftInfo" v-if="index<5"> 
+                            <span class="fl index">{{index + 1}}</span>
+                            <span class="fl name">{{item.name}}</span>
+                            <span class="fl num">{{item.count}}</span>
+                            <span class="fl lengthBox" :style="getStyle(item,index)"></span>
+                        </li>
+                    </ul>     
+                </div>
+                <div class="fl modBox">
+                    <TitleMod1 :typeStr="'记者任务数量排行'"></TitleMod1>
+                    <ul class="listBox">
+                        <li class="clearfix list" :style="getStyle1(index)" v-for="(item,index) in showMiddleInfo" v-if="index<5"> 
+                            <span class="fl index">{{index + 1}}</span>
+                            <span class="fl name">{{item.name}}</span>
+                            <span class="fl num">{{item.count}}</span>
+                            <span class="fl lengthBox" :style="getStyle(item,index)"></span>
+                        </li>
+                    </ul>     
+                </div>
+    </div>
+    
+    <div class="fl modBox">
+        <TitleMod1 :typeStr="'各平台占比'"></TitleMod1>
+        <pie :data="showRightInfo" :legend="legend" :percent="percent"></pie>
+    </div>
+</div> 

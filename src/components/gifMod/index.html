@@ -1,0 +1,45 @@
+<div class="gifBox">
+    <div class="imgBox">
+        <img src="../../assets/images/gif1.gif" alt="">
+    </div>
+    <div class="imgBox1">
+        <img src="../../assets/images/people.gif" alt="">
+    </div>
+    <div class="lanmu lanmu1">
+        <p class="title">最好栏目</p>
+        <div class="infoBox">
+            <p class="infoList" v-for="(item,index) in showInfoData">{{item.name}}</p>
+        </div>
+    </div>
+    <div class="lanmu lanmu2">
+        <p class="title">用户行业</p>
+        <div class="infoBox">
+            <p class="infoList infoList1 clearfix" v-for="(item,index) in showInfoData1">
+                <span class="fl">{{item.name}}（{{item.industry}}）</span>
+                <span class="fr">{{item.percentage}}%</span>
+            </p>
+        </div>
+    </div>
+    <div class="lanmu lanmu3">
+        <p class="title">性别占比</p>
+        <div class="infoBox"  v-for="(item,index) in showInfoData2.sex">
+            <p class="infoList infoList1 clearfix">
+                <span class="fl">男</span>
+                <span class="fr">{{item.man}}</span>
+            </p>
+            <p class="infoList infoList1 clearfix">
+                    <span class="fl">女</span>
+                    <span class="fr">{{item.woman}}</span>
+                </p>
+        </div>
+    </div>
+    <div class="lanmu lanmu4">
+        <p class="title">年龄占比</p>
+        <div class="infoBox">
+            <p class="infoList infoList1 clearfix" v-for="(item,index) in showInfoData2.age">
+                <span class="fl">{{item.name}}</span>
+                <span class="fr">{{item.data}}</span>
+            </p>
+        </div>
+    </div>
+</div>

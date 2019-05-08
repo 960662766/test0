@@ -1,0 +1,122 @@
+.gifBox{
+    position: relative;
+    // width: 4.62rem;
+    // height: 3.79rem;
+    .imgBox{
+        width: 3rem;
+        height: 3rem;
+        margin: auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgBox1{
+        width: 1.02rem;
+        height: 0.96rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .lanmu{
+        position: absolute;
+        .title{
+            font-size: 0.15rem;
+            border-bottom: 2px solid #5688bb;
+            color: #9ae6fe;
+            padding-bottom: 0.08rem;
+            padding-right: 0.2rem;
+            position: relative;
+            &:after{
+                display: block;
+                content: '';
+                width:0.8rem;
+                height: 1px;
+                background: #5688bb;
+                position: absolute;
+                
+            }
+        }
+        .infoBox{
+            margin-top: 0.15rem;
+            .infoList{
+                font-size: 0.14rem;
+                line-height: 0.26rem;
+                margin-bottom: 0.1rem;
+                color: #9ae6fe
+
+
+            }
+        }
+    }
+    .lanmu1{
+        top: .1rem;
+        left: -.09rem;
+        .title{
+            &:after{
+                right: -.68rem;
+                bottom: -0.3rem;
+                transform: rotate(45deg);
+            } 
+        }
+        .infoBox{
+            .infoList{
+                padding-left: 0.33rem;
+                background: url('../../assets/images/jb2x.png') no-repeat left center;
+                background-size: 0.25rem 0.25rem;
+                color: #9ae6fe
+            }
+        }
+    }
+    .lanmu2{
+        right: -.09rem;
+        top: .1rem;
+        .title{
+            padding-right: 0;
+            padding-left: 0.2rem;
+            &:after{
+                left:-0.7rem;
+                bottom: -0.3rem;
+                transform: rotate(-45deg);
+            } 
+        }
+        .infoList1{
+
+        }
+    }
+    .lanmu3{
+        left: -.09rem;
+        bottom: -0.2rem;
+        .title{
+            &:after{
+                right:-0.7rem;
+                bottom: 0.26rem;
+                transform: rotate(135deg);
+            } 
+        }
+        .infoList{
+
+        }
+    }
+    .lanmu4{
+        right: -0.09rem;
+        bottom: -0.5rem;
+        .title{
+            &:after{
+                left: -0.65rem;
+                top: 0.05rem;
+                transform: rotate(-135deg);
+            } 
+        }
+        .infoList{
+            
+        }
+    }
+}

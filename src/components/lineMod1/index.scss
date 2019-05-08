@@ -1,0 +1,68 @@
+.lineBox{
+    .dateBox{
+        margin-bottom: 0.12rem;
+        span{
+            width: 0.62rem;
+            height: 0.34rem;
+            border-radius: 2px;
+            background: #2dc7ab;
+            line-height: 0.34rem;
+            color: #131c69;
+            font-size: 0.18rem;
+            margin-right: 0.1rem;
+            text-align: center;
+
+        }
+        .active{
+            background: #e59b22;
+        }
+    }
+    .lineInfoBox{
+        .lineInfoMainBox{
+            text-align: center;
+            color: #fff;
+            &:nth-of-type(1){
+                margin-right: 0.25rem;
+            }
+            .top{
+                width: 2.04rem;
+                height: .93rem;
+                padding-top: 0.13rem;
+                background: linear-gradient(180deg,rgba(56,94,184,0.82) 0%,rgba(36,69,175,0.74) 100%);
+                box-shadow: inset 0px 0px 6px 0px rgba(68,104,254,0.77);
+                border: 1px solid;
+                border-image: linear-gradient(360deg, rgba(115,159,255,0.22), rgba(56,126,147,0.1)) 1 1;
+                .lineInfo{
+                    width: 1.1rem;
+                    height: .71rem;
+                    // margin-right: .1rem;
+                }
+                .lineStrBox{
+                    text-align: right;
+                    .num{
+                        font-size: 0.3rem;
+                        font-weight: 600;
+                        line-height: 0.22rem;
+                        margin-bottom: 0.1rem;
+                    }
+                    .str{
+                        font-size: 0.2rem;
+                        color: #9bffe3;
+                    }
+                }
+            }
+            .bot{
+                margin-top: 0.1rem;
+            }
+            .type1{
+                span{
+                    display: inline-block;
+                    // padding-left: 0.47rem;
+                    // background: url(../../assets/images/dy2x.png) 2px no-repeat;
+                    background-size: 0.33rem 0.33rem;
+                }
+            }
+        }
+        
+    }
+}

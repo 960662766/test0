@@ -1,0 +1,31 @@
+<div class="tableListMod">
+    <div class="titleBox clearfix" :class="typeNum == 1? 'titleBox' : 'titleBox1'" v-if="typeNum != 3">
+        <p v-for="(item,index) in typeAllBox[typeNum]" 
+            :key="item.id" 
+            class="fl" 
+            :class="showIndex == item.id ? 'active' : ''"
+            @click="setActive(item.id)"
+            >{{item.name}}</p>
+    </div>
+    <TitleMod1 :typeStr="'选题在线'" v-else></TitleMod1>
+    <div class="infoBox">
+        <div class="infoScrollBox" ref="infoScrollBox">
+            <div class="infoListBox" v-for="(item,index) in showInfoBox" v-if="index<5" @click="getItemInfo(index)">
+                <div class="topInfo clearfix">
+                    <span class="pic fl" v-if="typeNum != 3"></span>
+                    <span class="infoStr fl">{{item.title}}</span>
+                </div>
+                <div class="botInfo clearfix">
+                    <span class="fl" :class="typeNum == 3 ? 'otherName': 'normalName'">{{item.reportor}}</span>
+                    <div class="fl clearfix otherInfoBox" v-if="typeNum == 3">
+                        <span class="fl num">{{item.executorNum}}</span>
+                        <span class="fl otherInfo">{{item.deptName}}</span>
+                    </div>
+                    <span class="fr">{{item.reporttime|fomatertime}}</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <fiveBlock v-if="typeNum==3" ref="fiveBlock"></fiveBlock>
+</div>

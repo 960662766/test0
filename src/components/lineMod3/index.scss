@@ -1,0 +1,67 @@
+
+.lineBox2{
+    width: 5.55rem;
+    margin-top: .37rem;
+    .echartBox{
+        width: 100%;
+        height: 2.4rem;
+    }
+    .infoBox{
+        width: 100%;
+        text-align: center;
+        .listBox{
+            margin-top: 0.24rem;
+            height: 1.9rem;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .list{
+                &:nth-of-type(n){
+                    background: #3643a3;
+                }
+                &:nth-of-type(2n){
+                    background: transparent;
+                }
+                line-height: 0.38rem;
+                height: 0.38rem;
+                font-size: 0.15rem;
+                .index{
+                    width: 0.48rem;
+                    font-weight: 600;
+                    text-align: center;
+                    color: #9bffc1;
+                }
+                .info{
+                    text-align: left;
+                    color: #fff;
+                    width: 4rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .num{
+                    color: #9bffc1;
+                    font-weight: 600;
+                    margin-right: 0.16rem;
+                }
+            }
+        }
+        .btnTop{
+            margin-top: 0.23rem;
+            margin-bottom: 0.13rem;
+        }
+        .btnTop,.btnBot{
+            width: 0.63rem;
+            height: 0.11rem;
+            display: inline-block;
+            background: url('../../assets/images/Triangle2x.png') no-repeat;
+            background-size: 100%;
+        }
+        .btnBot{
+            margin-top: 0.12rem;
+            background-image:url('../../assets/images/Triangle2xDown.png');
+        }
+    }
+    
+}

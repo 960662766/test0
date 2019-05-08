@@ -1,0 +1,84 @@
+.speedListMod{
+    margin-top: .8rem;
+    .modBox{
+        width: 1.9rem;
+        height: 2.52rem;
+        text-align: center;
+        margin-right: 0.15rem;
+        &:nth-of-type(3){
+            margin-right: 0;
+        }
+        .btnTop{
+            margin-top: 0.23rem;
+            margin-bottom: 0.13rem;
+        }
+        .btnTop,.btnBot{
+            width: 0.63rem;
+            height: 0.11rem;
+            display: inline-block;
+            background: url('../../assets/images/Triangle2x.png') no-repeat;
+            background-size: 100%;
+        }
+        .btnBot{
+            background-image:url('../../assets/images/Triangle2xDown.png');
+        }
+        .listBox{
+            width: 100%;
+            text-align: left;
+            height: 1.8rem;
+            overflow-y: auto;
+            margin-top: .23rem;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            li{
+                &:nth-of-type(1){
+                    color: #ff6774;
+                }
+                &:nth-of-type(2){
+                    color: #f6795b;
+                }
+                &:nth-of-type(3){
+                    color: #f5b55b;
+                }
+                &:nth-of-type(4){
+                    color: #e6da60;
+                }
+                &:nth-of-type(5){
+                    color: #89c94e;
+                }
+                &:nth-of-type(6){
+                    color: #54c995;
+                    margin-bottom: 0;
+                }
+                height: 0.24rem;
+                margin-bottom: .1rem;
+                line-height: 0.24rem;
+                font-size: 0.24rem;
+                .index{
+                    width: 0.16rem;
+                    font-size: .15rem;
+                }
+                .name{
+                    width: 0.6rem;
+                    margin-right: 0.05rem;
+                    font-size: .15rem;
+                }
+                .num{
+                    width: 0.2rem;
+                    margin-right: 0.05rem;
+                    font-size: .15rem;
+                }
+                .lengthBox{
+                    width: 0.65rem;
+                    height:0.24rem;
+                    background: #ce3f51;
+                }
+            }
+        }
+        .echartsNDGR{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

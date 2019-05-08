@@ -1,0 +1,12 @@
+<div class="leftBotModBox">
+    <TitleMod1 :typeStr="'新闻大数据'"></TitleMod1>
+    <div class="navBox clearfix">
+        <div class="navList fl clearfix" v-for="(n,index) in showDataBox" :key="index" @click="setActive(index)">
+            <span class="fl navStr1" :class="showIndex == index ? 'active' : ''">{{n.name}}</span>
+            <span class="fl navStr2">{{n.value}}</span>
+        </div>
+    </div>
+    <div id="echartsBox" class="echartsBox">
+
+    </div>
+</div>

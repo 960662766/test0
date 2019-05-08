@@ -1,0 +1,20 @@
+<div class="mapBox" id="mapBox">
+    <baidu-map 
+        :center="center" 
+        :zoom="zoom" 
+        style="height:100%"
+        @ready="handler" 
+        @click="">    
+        <bm-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-geolocation>
+        <bm-marker v-for="(marker,index) in markers" :position="{lng: marker.lng, lat: marker.lat}" :key="index" :icon="{url: marker.headimg, size: {width: 50, height: 50}}">
+            <bm-label :content="marker.username" :labelStyle="{color: '#fff', fontSize : '15px',backgroundColor:'transparent',border:0,width:'50px',margin:'auto',left:'0px',right:'0px',top:'50px',display:'block',textAlign:'center'}" :offset="{width: 0, height: 50}"/>
+        </bm-marker>
+        
+        
+        <!-- <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
+        <bm-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-map-type>
+        <bm-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-geolocation>    
+        <bm-city-list anchor="BMAP_ANCHOR_TOP_LEFT"></bm-city-list> -->
+    </baidu-map>
+    <a :href="connurl" target="_blank" class="tobig"><img src="../../assets/images/tobig.png"/></a>
+</div>

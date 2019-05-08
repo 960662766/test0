@@ -1,0 +1,117 @@
+.tableListMod{
+    width: 5.55rem;
+    margin-bottom: .36rem;
+    margin-top: .4rem;
+    position: relative;
+    .titleBox{
+        p{
+            width: 1.4rem;
+            height: 0.36rem;
+            line-height: 0.4rem;
+            background: url('../../assets/images/Group2x.png') no-repeat;
+            background-size: 100% 100%;
+            font-size: 0.16rem;
+            color: #131c69;
+            margin-right: 0.27rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        .active{
+            background-image: url('../../assets/images/Group2xActive.png');
+        }
+    }
+    .titleBox1{
+        p{
+            width: 1.52rem;
+            background:#2dc7ab;
+            color: #141b69;
+            margin-right: 0.1rem;
+            &:nth-last-of-type(1){
+                margin-right: 0;
+            }
+        }
+        .active{
+            background: #e59b22;
+            background-image:url();
+        }
+    }
+    .infoBox{
+        text-align: center;
+        line-height: 0;
+        margin-top: .12rem;
+        .btnTop{
+            margin-top: 0.23rem;
+            margin-bottom: 0.13rem;
+        }
+        .btnTop,.btnBot{
+            width: 0.63rem;
+            height: 0.11rem;
+            display: inline-block;
+            background: url('../../assets/images/Triangle2x.png') no-repeat;
+            background-size: 100%;
+        }
+        .btnBot{
+            margin-top: 0.12rem;
+            background-image:url('../../assets/images/Triangle2xDown.png');
+        }
+        .infoScrollBox{
+            height: 2.6rem;
+            overflow-y: auto;
+            border-top: 1px solid #828dba;
+            &::-webkit-scrollbar {
+                display: none;
+
+            }
+        }
+        .infoListBox{
+            width: 100%;
+            border-bottom: 1px dashed #5a7cb9;
+            .topInfo{
+                font-size: 0.15rem;
+                // height: 0.24rem;
+                margin: 0.05rem 0 0.03rem;
+                line-height: 0.2rem;
+                color: #fff;
+                text-align: left;
+                .pic{
+                    width: 0.15rem;
+                    height: 0.15rem;
+                    border-radius: 50%;
+                    background:#9bffc1;
+                    margin-right: 0.08rem;
+                }
+                .infoStr{
+                    width: calc(100% - 0.5rem);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .botInfo{
+                font-size: 0.13rem;
+                line-height: 0.2rem;
+                margin-bottom: 0.03rem;
+                color: #9bffc1;
+                .normalName{
+                    padding-left: 0.24rem;
+                }
+                .otherName{
+                    width: 1.32rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-align: left;
+                }
+                .otherInfoBox{
+                    text-align: left;
+                    .num{
+                        width: 1rem;
+                        padding-left: 0.22rem;
+                        background: url('../../assets/images/center2x.png') no-repeat;
+                    }
+
+                }
+            }
+        }
+    }
+}

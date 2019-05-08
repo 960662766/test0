@@ -1,0 +1,42 @@
+.stringType2{
+    .titleMod1{
+        .title{
+            width: 2.9rem;
+        }
+    }
+    .listBox{
+        height: 2.75rem;
+        margin-top: 0.24rem;
+        .list{
+            &:nth-of-type(n){
+                background: #3643a3;
+            }
+            &:nth-of-type(2n){
+                background: transparent;
+            }
+            line-height: 0.55rem;
+            height: 0.55rem;
+            font-size: 0.24rem;
+            .index{
+                width: 0.48rem;
+                font-weight: 600;
+                text-align: center;
+                color: #9bffc1;
+            }
+            .info{
+                color: #fff;
+                width: 5rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .num{
+                color: #9bffc1;
+                font-weight: 600;
+                margin-right: 0.16rem;
+            }
+
+
+        }
+    }
+}

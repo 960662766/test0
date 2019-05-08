@@ -1,0 +1,35 @@
+.leftBotModBox{
+    width: 6.5rem;
+    margin-top: 0.22rem;
+    .navBox{
+        margin-top: 0.2rem;
+        .navList{
+            width: 1.82rem;
+            margin-bottom: 0.08rem;
+            .navStr1{
+                width: 0.95rem;
+                height: 0.33rem;
+                line-height: 0.33rem;
+                color: #151c6a;
+                text-align: center;
+                background: #2dc7ab;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+            .active{
+                background: #e59b22;
+            }
+            .navStr2{
+                width: 0.86rem;
+                text-align: center;
+                line-height: 0.33rem;
+                height: 0.33rem;
+                color: #9bffc1;
+            }
+        }
+    }
+    #echartsBox{
+        width: 100%;
+        height: 2.9rem;
+    }
+}

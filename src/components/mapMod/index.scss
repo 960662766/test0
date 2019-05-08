@@ -1,0 +1,22 @@
+.mapBox{
+    position: relative;
+    width: 7.29rem;
+    height: 4.36rem;
+    .anchorBL{
+		display:none;
+    }
+    .BMap_mask{
+        background-color: rgba(91,134,213,0.5)
+    }
+    .anchorBR{
+        display: none;
+    }
+    .tobig{
+        width: .59rem;
+        display: inline-block;
+        position: absolute;
+        right: .2rem;
+        bottom: .2rem;
+    }
+
+}

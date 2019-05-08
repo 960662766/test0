@@ -1,0 +1,10 @@
+<div class="stringType2">
+    <TitleMod1 :typeStr="'稿件数排名前5的选题'" ></TitleMod1>
+    <ul class="listBox">
+       <li class="list clearfix" v-for="(item,index) in showInfoData"> 
+            <span class="fl index">{{index+1}}</span>
+            <span class="fl info">{{item.name}}</span>
+            <span class="fr num">{{item.count}}</span>
+       </li> 
+    </ul>    
+</div>
